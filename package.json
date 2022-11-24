@@ -2,18 +2,23 @@
   "name": "server-side",
   "version": "1.0.0",
   "description": "",
-    "scripts": {
-    "dev": "parcel src/pages/index.hbs --no-cache",
-    "build": "parcel build src/pages/index.hbs  && node ./server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {
+    "start": "parcel static/index.html -p 3000",
+    "dev": "parcel static/index.html -p 3000 --open",
+    "build": "parcel build static/index.html",
+    "server": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dmitri Kou",
   "license": "ISC",
   "devDependencies": {
-    "@anikin/parcel-transformer-handlebars": "^1.0.9",
-    "parcel": "^2.7.0",
-    "postcss-import": "^15.0.0"
+    "handlebars": "^4.7.7",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "path": "^0.12.7",
+    "postcss": "^8.4.19",
+    "postcss-import": "^15.0.0",
+    "sass": "^1.43.4"
   },
   "dependencies": {
     "express": "^4.18.1"

@@ -1,0 +1,19 @@
+@import 'variables.scss';
+
+@import url('./normalize.css');
+@import url('./fonts.css');
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: $main-background;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    margin:0px;
+    padding:0px;
+    min-height: 100vh;
+}

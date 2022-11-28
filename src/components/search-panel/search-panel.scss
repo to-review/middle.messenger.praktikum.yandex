@@ -1,0 +1,21 @@
+@import '../../common-styles/variables.scss';
+@import '../../common-styles/mixin.scss';
+.search-panel {
+    margin: 23px 0px 14px;
+    &__input {
+        background-color: $important-background;
+        border: none;
+        background-image: url(../../../static/images/icons/search.svg);
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        padding: 0px 0px 0px 30px;
+        border-radius: 5px;
+        color: $main-text-color;
+        height: 32px;
+        @include font_type_regular;
+        box-sizing: border-box;
+        width:100%;
+        -moz-box-sizing: border-box; //Firefox
+        -webkit-box-sizing: border-box; //Safari, Chrome и iOS
+    }
+}

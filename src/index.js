@@ -2,6 +2,7 @@ import './common-styles/init.scss';
 //import './vendor/vendor.scss';
 
 import { renderMessenger } from './pages/messenger/messenger';
+import { renderChat } from './pages/chat/chat';
 import { renderError404 } from './pages/error/404/404';
 import { renderError500 } from './pages/error/500/500';
 
@@ -10,9 +11,12 @@ const path = window.location.pathname;
 
 switch (path) {
     case '/':
-    case '/messenger':
-        root.innerHTML = renderMessenger();
-        break;
+        case '/messenger':
+            root.innerHTML = renderMessenger();
+            break;
+        case '/chat':
+            root.innerHTML = renderChat();
+            break;
     case '/500':
             root.innerHTML = renderError500();
             break;

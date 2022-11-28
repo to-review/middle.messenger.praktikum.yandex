@@ -1,0 +1,33 @@
+@import '../../../common-styles/variables.scss';
+@import '../../../common-styles/mixin.scss';
+.chat-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid $important-background;
+    padding: 10px 0px;
+    
+    &__avatar {
+        display: block;
+        width: 34px;
+        height: 34px;
+        margin: 0px 10px 0px 0px;
+        border-radius: 50%;
+    }
+
+    &__name {
+        margin: 0px;
+        flex-grow: 1;
+        @include font_type_important;
+
+    }
+
+    &__more {
+        display: block;
+        width: 3px;
+        height: 15px;
+        background-image: url(../../../../static/images/icons/more.svg);
+        background-size: cover;
+        margin: 10px 10px 0px 20px;
+    }
+}

@@ -1,0 +1,18 @@
+            <div class="chats-list__element">
+                <img src="{{ avatarUrl }}" alt="Аватар" class="chats-list__img">
+                <div class="chats-list__texts">
+                    <h3 class="chats-list__name">{{ name }}</h3>
+                    <p class="chats-list__text">
+                        {{#if fromMe}}
+                            <span class="chats-list__direction">Вы:</span>
+                        {{/if}}
+                        {{ text }}
+                    </p>
+                </div>
+                <div class="chats-list__info">
+                    <p class="chats-list__time">{{ time }}</p>
+                    {{#if messagesAmount}}
+                        <p class="chats-list__amount">{{ messagesAmount }}</p>
+                    {{/if}}
+                </div>
+            </div>

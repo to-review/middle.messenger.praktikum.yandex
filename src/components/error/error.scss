@@ -1,4 +1,4 @@
-@import '../../vendor/variables.scss';
+@import '../../common-styles/variables.scss';
 
 .error {
     text-align: center;
@@ -11,7 +11,7 @@
     
 
     &__title {
-        color: $main-color;
+        color: $important-text-color;
         font-weight: 500;
         font-size: 40px;
         line-height:40px;
@@ -19,7 +19,7 @@
     }
 
     &__subtitle {
-        color: $main-color;
+        color: $important-text-color;
         font-weight: 500;
         font-size: 20px;
         line-height: 20px;

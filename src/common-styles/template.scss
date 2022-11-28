@@ -1,0 +1,111 @@
+@import 'variables.scss';
+@import 'mixin';
+
+.page {
+    display:grid;
+    grid-template-columns: 310px 1fr;
+    min-height:100vh;
+}
+
+.side-panel {
+    border-right: 1px solid black;
+    padding: 21px 10px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include font_type_regular;
+    height: 100vh;
+}
+
+.profile-menu {
+    @include font_type_regular;
+    text-align: right;
+
+    &__link {
+        text-decoration: none;
+        color: $main-text-color;
+    }
+}
+
+.search-panel {
+    margin: 23px 0px 14px;
+    &__input {
+        background-color: $important-background;
+        border: none;
+        background-image: url(../../static/images/icons/search.svg);
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        padding: 0px 0px 0px 30px;
+        border-radius: 5px;
+        color: $main-text-color;
+        height: 32px;
+        @include font_type_regular;
+        box-sizing: border-box;
+        width:100%;
+        -moz-box-sizing: border-box; //Firefox
+        -webkit-box-sizing: border-box; //Safari, Chrome и iOS
+    }
+}
+.chats-list {
+    &__element {
+        border-top: 1px solid $important-background;
+        display: flex;
+        flex-direction: row;
+        padding:12px 0px;
+    }
+    &__img {
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        background-color: $main-background;
+        margin: 0px 10px 0px;
+    }
+    &__texts {
+        flex-grow: 1;
+    }
+    &__name {
+        @include font_type_important;
+        margin: 0px 0px 4px;
+    }
+    &__text {
+        @include font_type_regular;
+        margin: 0px;
+        color: $main-text-color;
+    }
+    &__direction {
+        color: $important-text-color;
+    }
+    &__info {
+        margin: 0px 0px 0px 27px;
+    }
+    &__time {
+        font-size: 9px;
+        line-height: 13px;
+        font-weight: 500;
+        color: $main-text-color;
+    }
+    &__time {
+        font-size: 9px;
+        line-height: 13px;
+        font-weight: 500;
+        color: $main-text-color;
+        margin:0px;
+    }
+    &__amount {
+        font-size: 11px;
+        line-height: 12px;
+        font-weight: 500;
+        color: $on-the-bright-text-color;
+        border-radius: 50%;
+        background-color: $main-accent-background;
+        height: 20px;
+        width: 20px;
+        margin:18px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+    }
+}

@@ -1,0 +1,39 @@
+<div class="page">
+    <div class="side-panel">
+        <div class="profile-menu"><a href="" class="profile-menu__link">Профиль &rarr;</a></div>
+        <div class="search-panel"><input type="text" name="search" class="search-panel__input" value="Поиск"></div>
+        <section class="chats-list">
+            {{#each messagesList}}
+                {{>message message}}
+            {{/each}}
+            <!--
+            <div class="chats-list__element">
+                <img src="../../../static/images/avatars/1.jpg" alt="Аватар" class="chat-list__img">
+                <div class="chats-list__texts">
+                    <h3 class="chats-list__name">Андрей</h3>
+                    <p class="chats-list__text">
+                        <span class="chats-list__direction">Вы:</span> Некоторое сообщение
+                    </p>
+                </div>
+                <div class="chats-list__info">
+                    <p class="chats-list__time">10:49</p>
+                </div>
+            </div>
+            <div class="chats-list__element">
+                <img src="../../../static/images/avatars/2.jpg" alt="Аватар" class="chat-list__img">
+                <div class="chats-list__texts">
+                    <h3 class="chats-list__name">Василий</h3>
+                    <p class="chats-list__text">
+                        Другое сообщение
+                    </p>
+                </div>
+                <div class="chats-list__info">
+                    <p class="chats-list__time">10:49</p>
+                    <p class="chats-list__amount">4</p>
+                </div>
+            </div>
+            -->
+        </section>
+    </div>
+    <main class="main">Выберите чат чтобы отправить сообщение</main>
+</div>

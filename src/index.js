@@ -1,5 +1,7 @@
-import './vendor/vendor.scss';
+import './common-styles/init.scss';
+//import './vendor/vendor.scss';
 
+import { renderMessenger } from './pages/messenger/messenger';
 import { renderError404 } from './pages/error/404/404';
 import { renderError500 } from './pages/error/500/500';
 
@@ -8,7 +10,8 @@ const path = window.location.pathname;
 
 switch (path) {
     case '/':
-        root.innerHTML = renderError404();
+    case '/messenger':
+        root.innerHTML = renderMessenger();
         break;
     case '/500':
             root.innerHTML = renderError500();

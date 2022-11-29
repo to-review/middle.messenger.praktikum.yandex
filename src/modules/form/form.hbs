@@ -1,0 +1,17 @@
+<form class="form">
+    <div class="form__container"></div>
+    <h1 class="form__title">{{ formTitle }}</h1>
+    <div class="form__fields">
+        {{#each fields}}
+            {{>field field}}
+        {{/each}}
+    </div>
+    {{>button button}}
+    
+    {{#if link}}
+        <div class="form__links">
+            <a href="{{ link.url }}" class="form__link">{{ link.text }}</a>
+        </div>
+     {{/if}}
+
+</form>

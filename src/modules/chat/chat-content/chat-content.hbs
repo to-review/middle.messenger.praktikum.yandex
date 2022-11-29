@@ -1,1 +1,9 @@
-<div class="chat-content">Chat content</div>
+<div class="chat-content">
+    {{#each messages}}
+        <div class="chat-content__message{{#if this.fromMe}} chat-content__message_my{{/if}}">
+            <div class="chat-content__time">{{ this.time }}</div>
+            <div class="chat-content__text">{{ this.content }}</div>
+            
+        </div>
+    {{/each}}
+</div>

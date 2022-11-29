@@ -5,6 +5,13 @@
     display:grid;
     grid-template-columns: 310px 1fr;
     min-height:100vh;
+    &_centered{
+        min-height:100vh;
+        padding: 20px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 

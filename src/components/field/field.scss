@@ -1,0 +1,13 @@
+@import '../../common-styles/variables.scss';
+@import '../../common-styles/mixin.scss';
+
+.input {
+    @include font_type_regular;
+    border: none;
+    border-bottom: 1px solid $main-accent-background;
+    color: $main-text-color;
+    margin-bottom: 20px;
+    height: 20px;
+    width: 100%;
+    background: none;
+}

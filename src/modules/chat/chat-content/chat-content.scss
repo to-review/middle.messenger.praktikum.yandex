@@ -1,0 +1,37 @@
+@import '../../../common-styles/variables.scss';
+@import '../../../common-styles/mixin.scss';
+.chat-content {
+    flex-grow: 1;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    &__message {
+        background-color: $important-background;
+        border-radius: 0px 10px 10px 10px;
+        margin-bottom:10px;
+        padding: 11px;
+        width: 400px;
+        &_my {
+            border-radius: 10px 10px 0px 10px;
+            background-color: $active-background;
+            align-self: flex-end;
+        }
+    }
+    &__time {
+        float: right;
+        font-size: 9px;
+        line-height: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 13px;
+        width:37px;
+        border-radius: 5px;
+        background-color: $main-accent-background;
+        margin: 0px 0px 5px 10px;
+    }
+    &__text {
+        @include font_type_regular;
+        line-height: 15px;
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../../common-styles/variables.scss';
+@import '../../../common-styles/mixin.scss';
+.chat-input {
+    padding: 10px 0px;
+    border-top: 1px solid $important-background;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    &__field {
+        background-color: $important-background;
+        border: none;
+        background-image: url(../../../../static/images/icons/search.svg);
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        padding: 0px 0px 0px 30px;
+        border-radius: 5px;
+        color: $main-text-color;
+        height: 32px;
+        @include font_type_regular;
+        box-sizing: border-box;
+        flex-grow: 1;
+        -moz-box-sizing: border-box; //Firefox
+        -webkit-box-sizing: border-box; //Safari, Chrome и iOS
+    }
+
+    &__button {
+        font-size:16px;
+        margin: 0px 0px 0px 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $on-the-bright-text-color;
+        background-color: $main-accent-background;
+        width: 28px;
+        height: 28px;
+        border: none;
+    }
+}

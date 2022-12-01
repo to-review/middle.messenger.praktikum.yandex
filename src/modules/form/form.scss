@@ -1,0 +1,21 @@
+@import '../../common-styles/variables.scss';
+@import '../../common-styles/mixin.scss';
+.form {
+        border: 1px solid $important-background;
+        border-radius: 10px;
+        width: 350px;
+        padding: 30px;
+        &__title {
+            font-size:20px;
+            line-height:20px;
+            text-align: center;
+            font-weight: 500;
+        }
+        &__links {
+            margin-top: 20px;
+            text-align: center;;
+        }
+        &__link {
+            color: $links-color;
+        }
+}

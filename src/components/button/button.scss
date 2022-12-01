@@ -1,0 +1,11 @@
+@import '../../common-styles/variables.scss';
+@import '../../common-styles/mixin.scss';
+.button {
+    @include font_type_regular;
+    border: none;
+    color: $on-the-bright-text-color;
+    height: 37px;
+    width: 100%;
+    background: $main-accent-background;
+    border-radius: 10px;
+}

@@ -1,0 +1,11 @@
+@import '../../common-styles/variables.scss';
+@import '../../common-styles/mixin.scss';
+.profile-menu {
+    @include font_type_regular;
+    text-align: right;
+
+    &__link {
+        text-decoration: none;
+        color: $main-text-color;
+    }
+}

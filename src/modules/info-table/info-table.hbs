@@ -1,0 +1,19 @@
+<form class="info-table">
+    <img src="{{image}}" alt="Аватар" class="info-table__avatar">
+    <h1 class="info-table__main-title">{{title}}</h1>
+    <div class="info-table__fields">
+        {{#each fields}}
+            
+            <div class="info-table__field">
+                <div class="info-table__title">{{field.title}}</div>
+                <div class="info-table__value">{{field.value}}</div>
+            </div>
+        {{/each}}
+    </div>
+    <div class="info-table__links"></div>
+        {{#each links}}
+            <a href="{{ this.url }}" class="info-table__link">{{ this.text }}</a>
+        {{/each}}
+     </div>
+
+</div>

@@ -1,0 +1,18 @@
+<div class="message">
+    <img src="{{ avatarUrl }}" alt="Аватар" class="message__img">
+    <div class="message__texts">
+        <h3 class="message__name">{{ name }}</h3>
+        <p class="message__text">
+            {{#if fromMe}}
+                <span class="message__direction">Вы:</span>
+            {{/if}}
+            {{ text }}
+        </p>
+    </div>
+    <div class="message__info">
+        <p class="message__time">{{ time }}</p>
+        {{#if messagesAmount}}
+            <p class="message__amount">{{ messagesAmount }}</p>
+        {{/if}}
+    </div>
+</div>
